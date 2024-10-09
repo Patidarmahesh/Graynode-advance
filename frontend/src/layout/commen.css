@@ -1,0 +1,136 @@
+.footer-container {
+    border: 0px solid red;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 1px 50px;
+    justify-items: center;
+    gap: 10px;
+}
+
+.footer-middlec-part {
+    width: 86%;
+    border: 0px solid blue;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: space-between;
+}
+
+.image-log {
+    border: 0px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.image-log img{
+    width: 300px;
+}
+
+.card-1st-footer {
+    border: 0px solid rgb(37, 95, 61);
+    width: 438px;
+}
+
+.card-2nd-footer {
+    border: 0px solid rgb(144, 144, 160);
+}
+
+.line {
+    border: 1px solid gray;
+    width: 86%;
+    background: gray;
+}
+
+.card-2nd-footer h5 {
+    margin-left: 24px;
+    font-weight: bold;
+}
+
+.card-1st-footer h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-2nd-footer ul {
+    border: 0px solid rgb(144, 144, 160);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: gray;
+}
+
+.card-2nd-footer li {
+    border: 0px solid rgb(144, 144, 160);
+    text-decoration: none;
+
+}
+
+.card-2nd-footer li a {
+    border: 0px solid rgb(144, 144, 160);
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.2s linear;
+
+}
+
+li a:hover{
+    color: aquamarine;
+}
+
+.footer-bootom {
+    border: 0px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-bootom a {
+    text-decoration: none;
+    color: gray;
+
+}
+
+@media only screen and (max-width: 1020px) {
+    .footer-middlec-part {
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+    }
+    .card-1st-footer {
+        border: 0px solid rgb(37, 95, 61);
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-middlec-part {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .line {
+        border: 1px solid gray;
+        width: 90%;
+        background: gray;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-middlec-part {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    .line {
+        border: 1px solid gray;
+        width: 95%;
+        background: gray;
+    }
+
+
+}

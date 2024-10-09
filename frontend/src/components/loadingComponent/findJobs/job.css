@@ -1,0 +1,72 @@
+.find-job-container {
+    border: 0px solid green;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-template-rows:auto;
+    margin-bottom: 4rem;
+    background: linear-gradient(45deg, rgb(244, 255, 251) 0%, rgb(245, 255, 250) 100%);
+    background-image: url("http://graynod.dollopinfotech.com/assets/web/images/job-background.png");
+    background-size: 100% 100%;
+    opacity: 0.9;
+}
+
+
+.jobs-middle-container {
+    border: 0px solid gold;
+    width: 86%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.jobs-middle-container .job-1st-card{
+    border: 0px solid rgb(84, 36, 180);
+    display: flex;  
+    justify-content: end;
+}
+
+.jobs-middle-container .job-1st-card img{
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1020px) {
+    .jobs-middle-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        width: 80%;
+    }
+    .jobs-middle-container .job-1st-card{
+        border: 0px solid rgb(84, 36, 180);
+        display: flex;  
+        justify-content: end;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .jobs-middle-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 90%;
+    }
+    .jobs-middle-container .job-1st-card{
+        border: 0px solid rgb(84, 36, 180);
+        display: flex;  
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .jobs-middle-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 95%;
+    }
+    .jobs-middle-container .job-1st-card{
+        border: 0px solid rgb(84, 36, 180);
+        display: flex;  
+        justify-content: center;
+    }
+}

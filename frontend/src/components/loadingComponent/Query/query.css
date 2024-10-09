@@ -1,0 +1,185 @@
+.query-container {
+    border: 0px solid green;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-template-rows: auto;
+    margin-bottom: 4rem;
+}
+
+
+.query-middle-container {
+    border: 0px solid gold;
+    width: 86%;
+    display: grid;
+    grid-template-columns: 66% 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.query-text-head {
+    width: 40%;
+    margin-bottom: 14px;
+    border: 0px solid green;
+    width: 54%;
+}
+.query-text-head h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.query-text-head p {
+    color: gray;
+    font-size: 24px;
+}
+
+.form-textfield {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 26px;
+    column-gap: 26px;
+    border: 0px solid red;
+}
+
+.form-textfield .query-form-text {
+    width: 40%;
+}
+
+.form-textfield .query-form-text-area {
+    width: 83%;
+}
+
+#form-button-sumit {
+    border-radius: 30px;
+    padding: 14px;
+    width: 40%;
+    background: rgba(0, 218, 176, 0.5);
+    color: white;
+    font-size: 24px;
+    transition: .2s ease;
+}
+
+#form-button-sumit:hover {
+    background: white;
+    color: rgba(0, 218, 176, 0.5);
+    border: 1px solid rgba(0, 218, 176, 0.5);
+    transition: .2s ease;
+    width: 50%;
+}
+
+.query-middle-container .query-card {
+    border: 0px solid rgb(133, 66, 10);
+    background-image: url('http://graynod.dollopinfotech.com/assets/web/images/bussiness-hub-img.png');
+    object-fit: cover;
+    background: #00dab0;
+    padding: 40px;
+    /* height: 260px; */
+    border-radius: 8px;
+}
+
+.query-middle-container .query-card .card-text {
+    border: 0px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.query-middle-container .query-card h5 {
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.query-middle-container .query-card p {
+    color: white;
+    font-size: 22px;
+}
+
+#form-button-1 {
+    border-radius: 30px;
+    padding: 14px;
+    width: 98%;
+    font-size: 24px;
+    margin-left: 4px;
+    background: white;
+    color: rgba(0, 218, 176, 0.5);
+    transition: .2s ease;
+}
+
+#form-button-1:hover {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: .2s ease;
+    width: 98%;
+}
+
+@media only screen and (max-width: 1020px) {
+    .query-middle-container {
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+
+    .query-text-head {
+        width: 100%;
+    }
+
+    .form-textfield .query-form-text {
+        width: 100%;
+    }
+
+    .form-textfield .query-form-text-area {
+        width: 100%;
+    }
+    #form-button-sumit {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .query-middle-container {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .query-text-head {
+        width: 100%;
+    }
+
+    .form-textfield .query-form-text {
+        width: 100%;
+    }
+
+    .form-textfield .query-form-text-area {
+        width: 100%;
+    }
+    #form-button-sumit {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .query-middle-container {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    .form-textfield .query-form-text {
+        width: 100%;
+    }
+
+    .query-text-head {
+        width: 100%;
+    }
+
+    .form-textfield .query-form-text-area {
+        width: 100%;
+    }
+    #form-button-sumit {
+        width: 100%;
+    }
+    .query-middle-container .query-card {
+        padding: 30px;
+    }
+}

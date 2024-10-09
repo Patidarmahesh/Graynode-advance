@@ -1,0 +1,135 @@
+.view-profile-container {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+.view-profile-middle-content {
+    border: 0px solid gold;
+    margin-top: 3rem;
+    gap: 20px;
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 25%;
+    grid-template-rows: auto;
+}
+
+.view-profile-container {
+    border: 0px solid black;
+}
+
+.view-card {
+    border: 0px solid rgb(9, 150, 9);
+    width: 100%;
+}
+
+.view-image-logo-content {
+    border: 0px solid rgb(9, 150, 9);
+    height: 250px;
+    width: 100%;
+}
+
+.view-image-logo-content img {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: top;
+}
+
+.user-profile-image {
+    border-bottom: 1px solid #cbd3e7;
+    border-left: 1px solid #cbd3e7;
+    border-radius: 8px;
+    border-right: 1px solid #cbd3e7;
+    /* width: 100%; */
+    padding: 30px;
+    margin-bottom: 3rem;
+}
+
+.user-image-text-div {
+    border: 0px solid red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.user-image-content {
+    border: 0px solid rgb(13, 22, 123);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#edit-button {
+    background-color: #f3fffd;
+    border: 1px solid #00dab0;
+    color: #00dab0;
+    font-size: 18px;
+    /* padding: 10px 20px; */
+    min-width: 100px;
+    height: 56px;
+    border-radius: 34px;
+    display: flex;
+    gap: 4px;
+}
+
+#edit-button:hover {
+    background-color: #00dab0;
+    color: #fff;
+}
+
+.user-images {
+    border: 0px solid red;
+    width: 180px;
+    height: 180px;
+    z-index: 1;
+    margin-top: -7rem;
+}
+
+.user-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.stright-line {
+    border: 1px solid #cbd3e7;
+    width: 100%;
+}
+
+.about-content-user {
+    border: 1px solid #cbd3e7;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.about-content-user .over-view {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 8px;
+}
+
+@media only screen and (max-width: 1020px) {
+    .view-profile-middle-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .view-profile-middle-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .view-profile-middle-content {
+        grid-template-columns: 1fr;
+    }
+}
